@@ -1,0 +1,36 @@
+extends .././layout.jade
+block vars
+  -var title= 'Create User'
+block content
+
+  div(class="col-sm-4")
+  div(class="col-sm-3")
+    div(class="add")
+      form(action="/Add/addUser" method="POST" )
+        div(class="form-group") 
+          label(for="name") Name
+          input(type="text",name="name",placeholder="Name",id="name",class="form-control")
+          
+          
+        div
+          label(for="lastname") Last Name
+          input(type="text",name="lastname",placeholder="LastName",id="lastname",class="form-control")
+          
+        
+        div
+          label(for="address") Address
+          input(type="text",name="address",placeholder="Address",id="address",class="form-control")  
+            
+        
+        div
+          label(for="identification") Identification
+          input(type="text",name="identification",placeholder="Identification",id="identification",class="form-control")    
+          
+          br
+          div(class="row top-space")
+            div(class="col-xs-12 col-sm-6")
+              input(type="submit" value="Create" class="btn btn-info")
+            
+      
+        
+        

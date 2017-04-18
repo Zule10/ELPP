@@ -1,0 +1,31 @@
+extends .././layout.jade
+block vars
+  -var title= 'Update Page'
+block content
+  div(class="col-sm-4")
+  div(class="col-sm-3")
+    div(class="add")
+      form(action="/edit/editPage/#{page._id}" method="POST" )
+        div(class="form-group")
+          label(for="name") Name
+          input(type="text",name="name",value="#{page.name}",id="name",class="form-control")
+   
+   
+        div
+          label(for="url") Url
+          input(type="text",name="url",value="#{page.url}",id="url",class="form-control")
+    
+
+        div
+          label(for="protocol") Security Protocol
+          input(type="text",name="protocol",value="#{page.protocol}",id="protocol",class="form-control")
+
+
+        div
+          label(for="ishttp") isHttp
+          input(type="checkbox",name="ishttp",value="on",id="ishttp")
+
+
+          div(class="row top-space")
+            div(class="col-xs-12 col-sm-6")
+              input(type="submit" value="Update" class="btn btn-info")

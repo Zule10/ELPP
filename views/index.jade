@@ -1,0 +1,65 @@
+extends ./layout.jade
+block vars
+  -var title= 'ELPP ( ͡°  ͜ʖ  ͡°)'
+block content
+  div(id="myPage", class="container-fluid bg-grey")
+    div(class="row")
+      div(class="col-sm-4")
+        div(class="logo")
+          img(src="/public/images/b.png")
+    
+      div(class="col-sm-8")
+        h2 ABOUT US
+        br
+        h4 
+          strong Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        br
+        p
+          strong Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  div(id="original" class="container-fluid text-center")
+    h2 SERVICES
+      h4 What we offer
+    br
+    div(class="row slideanim")
+      div(class="col-sm-4")
+        img(src="/public/images/bi.png")
+        h4 POWER              
+      div(class="col-sm-4")
+        img(src="/public/images/mai.png")
+        h4 SAFETY
+      div(class="col-sm-4")
+        img(src="/public/images/ma.png")
+        h4 JOB DONE
+    br 
+    br
+    div(class="row slideanim")
+      div(class="col-sm-4")
+        img(src="/public/images/p.png")
+        h4  QUALITY
+      div(class="col-sm-4")
+        img(src="/public/images/pi.png")
+        h4 CERTIFIED
+      div(class="col-sm-4")
+        img(src="/public/images/s.png")
+        h4 HARD WORK
+
+  div(id="contact" class="container-fluid bg-grey")
+    div(class="row")
+      div(class="col-sm-5")
+        p Contact us and we'll get back to you within 24 hours
+        p 
+          span(class="glyphicon glyphicon-map-marker")  Medellín,CO
+        p 
+          span(class="glyphicon glyphicon-phone")  +57 1515151515
+        p 
+          span(class="glyphicon glyphicon-envelope")  phishingMail@elpp.com
+    
+
+  footer(class="container-fluid text-center")
+    a(href="/" title="To Top")
+      span(class="glyphicon glyphicon-chevron-up")
+        p Made By ELPP Team
+  
+  
+        
+      

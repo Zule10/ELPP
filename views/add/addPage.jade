@@ -1,0 +1,32 @@
+extends .././layout.jade
+block vars
+  -var title= 'Create Page'
+block content
+
+  div(class="col-sm-4")
+  div(class="col-sm-3")
+    div(class="add")
+      form(action="/Add/addPage" method="POST" )
+        div(class="form-group")
+          label(for="name") Name
+          input(type="text",name="name",placeholder="Name",id="name",class="form-control")
+   
+   
+        div
+          label(for="url") Url
+          input(type="text",name="url",placeholder="Url",id="url",class="form-control")
+    
+
+        div
+          label(for="protocol") Security Protocol
+          input(type="text",name="protocol",placeholder="Protocol",id="protocol",class="form-control")
+
+
+        div
+          label(for="ishttp") isHttp
+          input(type="checkbox",name="ishttp",placeholder="ishttp",id="ishttp",data-size='normal')
+           
+
+          div(class="row top-space")
+            div(class="col-xs-12 col-sm-6")
+              input(type="submit" value="Create" class="btn btn-info")
