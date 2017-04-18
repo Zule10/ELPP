@@ -20,7 +20,7 @@ Estan los schemas para la creacion de documento
 
 Controller.js
 -------------------------------------
-Este es el controlador del programa se inicia con node controller.js el programa corre en localhost:8080
+Este es el controlador del programa se inicia con node controller.js el programa corre en localhost:8000
 =======
 # ELPP
 >>>>>>> 21917c0a90aeb8338ae3a74f75c0f4d83b11d16a
